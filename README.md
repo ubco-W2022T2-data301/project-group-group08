@@ -1,4 +1,4 @@
-# Group YY - {Short snappy Title of your project}
+# Group 08 - {Short snappy Title of your project}
 
 - Your title can change over time.
 
@@ -12,7 +12,7 @@ Details for Milestone are available on Canvas (left sidebar, Course Project).
 
 ## Describe your dataset in about 150-200 words
 
-{Add your stuff here}
+The primary dataset our group is using is the medical expenses dataset given by the professor. It provides details on the individual medical costs charged by health insurance in the US. Since the primary dataset doesn’t provide the income of the individuals, we decided to find another dataset that provides the income of individuals in the US which we may use to merge with our primary dataset based on age.
 
 ## Team Members
 
