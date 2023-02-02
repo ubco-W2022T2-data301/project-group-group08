@@ -1,6 +1,4 @@
-# Group 08 - {Short snappy Title of your project}
-
-- Your title can change over time.
+# Group 08 - Healthy Body, Healthy Money (Working Title)
 
 ## Milestones
 
@@ -12,13 +10,13 @@ Details for Milestone are available on Canvas (left sidebar, Course Project).
 
 ## Describe your dataset in about 150-200 words
 
-The primary dataset our group is using is the medical expenses dataset given by the professor. It provides details on the individual medical costs charged by health insurance in the US. Since the primary dataset doesn’t provide the income of the individuals, we decided to find another dataset that provides the income of individuals in the US which we may use to merge with our primary dataset based on age.
+We are using the medical expense dataset from the course page which provides details on the individual medical costs charged by health insurance in the US. Since the primary dataset doesn’t provide the income of the individuals, we decided to find another dataset that provides the income of individuals in the US which we may use to merge with our primary dataset based on age.
 
 ## Team Members
 
-- Person 1: one sentence about you!
-- Person 2: one sentence about you!
-- Person 3: one sentence about you!
+- Amie Prasongsukarn: Third year, Data Science major at UBCO
+- Jason Samuel Suwito:  Third year, Data Science major at UBCO
+- Kenneth Abadi: Second year, Computer Science major at UBCO
 
 ## Images
 
@@ -29,6 +27,4 @@ The primary dataset our group is using is the medical expenses dataset given by 
 ## References
 
 {Add your stuff here}
-
-
 
