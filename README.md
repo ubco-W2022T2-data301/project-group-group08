@@ -6,11 +6,16 @@ Details for Milestone are available on Canvas (left sidebar, Course Project).
 
 ## Describe your topic/interest in about 150-200 words
 
-{Add your stuff here}
+What do you hope to do with your analytics project?
+Why are you interested in this topic or dataset?
+Do you have any questions you specifically want to explore?
+Could you imagine building a user-facing Dashboard with this dataset?
+Note: In the final weeks of the course you will be building a Dashboard with your data so choose wisely!
+
 
 ## Describe your dataset in about 150-200 words
 
-We are using the medical expense dataset from the course page which provides details on the individual medical costs charged by health insurance in the US. Since the primary dataset doesn’t provide the income of the individuals, we decided to find another dataset that provides the income of individuals in the US which we may use to merge with our primary dataset based on age.
+Our main dataset (Medical Cost Personal Datasets) were taken from Kaggle where the provider took it from a github user containing all datasets included in the Machine Learning with R book by Brett Lantz. The dataset contains 7 columns - age, sex, bmi, children, smoker, region and charges. The purpose of this dataset is to is for users (or people who are studying the book) to be able to test their knowledge of machine learning and use the dataset to predict or answer different research questions. For the supporting dataset, the data was extracted from the 1994 Census bureau database by Ronny Kohavi and Barry Becker as shown on Kaggle.
 
 ## Team Members
 
