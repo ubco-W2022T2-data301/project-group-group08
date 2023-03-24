@@ -45,8 +45,8 @@ def categorize_bmi(df):
     ranges = [0, 18.5, 25, 30, 35, 40, 100]
     lab_txt = ['Underweight', 'Normal', 'Overweight', 'Obese Class I', 'Obese Class II', 'Obese Class III']
     lab_num = [1, 2, 3, 4, 5, 6]
-    df['BMI_cat'] = pd.cut(df['bmi'], bins=ranges, labels=lab_txt, include_lowest=True)
-    df['BMI_cat_num'] = pd.cut(df['bmi'], bins=ranges, labels=lab_num, include_lowest=True)
+    df['BMI_cat'] = pd.cut('bmi', bins=ranges, labels=lab_txt, include_lowest=True)
+    df['BMI_cat_num'] = pd.cut('bmi', bins=ranges, labels=lab_num, include_lowest=True)
     return df
 
 #source: https://www.canada.ca/en/health-canada/services/food-nutrition/healthy-eating/healthy-weights/canadian-guidelines-body-weight-classification-adults/body-mass-index-nomogram.html 
