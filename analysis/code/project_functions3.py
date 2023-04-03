@@ -4,7 +4,7 @@ import numpy as np
 def load1(url_or_path_to_csv_file):
     df1 = (
           pd.read_csv(url_or_path_to_csv_file)
-          .drop(columns = ['sex', 'region','age','children'])
+          .drop(columns = ['sex','age','children'])
           .dropna(axis = 0)
       )
     return df1
