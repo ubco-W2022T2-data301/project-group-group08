@@ -36,7 +36,6 @@ def wrangle_income(df):
 def load_process_clean_medical(url_or_path_to_csv_file):
     df = (
         pd.read_csv(url_or_path_to_csv_file)
-        .drop(['children', 'smoker', 'region'], axis = 1)
         .dropna()
     )
     return df
