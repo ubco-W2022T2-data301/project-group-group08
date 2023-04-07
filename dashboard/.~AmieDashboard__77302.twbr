@@ -1,0 +1,1089 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20224.23.0312.0353                               -->
+<workbook original-version='18.1' source-build='2022.4.2 (20224.23.0312.0353)' source-platform='mac' version='18.1' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <_.fcp.AccessibleZoneTabOrder.true...AccessibleZoneTabOrder />
+    <_.fcp.AnimationOnByDefault.true...AnimationOnByDefault />
+    <AutoCreateAndUpdateDSDPhoneLayouts />
+    <_.fcp.ExternalImageContentForZones.true...ExternalImageContentForZones />
+    <_.fcp.MarkAnimation.true...MarkAnimation />
+    <_.fcp.ObjectModelEncapsulateLegacy.true...ObjectModelEncapsulateLegacy />
+    <_.fcp.ObjectModelTableType.true...ObjectModelTableType />
+    <_.fcp.SchemaViewerObjectModel.true...SchemaViewerObjectModel />
+    <SetMembershipControl />
+    <SheetIdentifierTracking />
+    <WindowsPersistSimpleIdentifiers />
+  </document-format-change-manifest>
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <_.fcp.AnimationOnByDefault.false...style>
+    <_.fcp.AnimationOnByDefault.false..._.fcp.MarkAnimation.true...style-rule element='animation'>
+      <_.fcp.AnimationOnByDefault.false...format attr='animation-on' value='ao-on' />
+    </_.fcp.AnimationOnByDefault.false..._.fcp.MarkAnimation.true...style-rule>
+  </_.fcp.AnimationOnByDefault.false...style>
+  <datasources>
+    <datasource caption='Amiemaindf' inline='true' name='federated.1jzwg2803t5s5u1dh4jnk1ar8gi0' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='Amiemaindf' name='textscan.0mhx1e917i3d69125foby1xfvr8a'>
+            <connection class='textscan' directory='/Users/amieprasongsukarn/data301/project-group-group08/data/processed' filename='Amiemaindf.csv' password='' server='' />
+          </named-connection>
+        </named-connections>
+        <_.fcp.ObjectModelEncapsulateLegacy.false...relation connection='textscan.0mhx1e917i3d69125foby1xfvr8a' name='Amiemaindf.csv' table='[Amiemaindf#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_CA' separator=','>
+            <column datatype='integer' name='F1' ordinal='0' />
+            <column datatype='integer' name='age' ordinal='1' />
+            <column datatype='integer' name='children' ordinal='2' />
+            <column datatype='real' name='charges' ordinal='3' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.false...relation>
+        <_.fcp.ObjectModelEncapsulateLegacy.true...relation type='collection'>
+          <relation connection='textscan.0mhx1e917i3d69125foby1xfvr8a' name='Amiemaindf.csv' table='[Amiemaindf#csv]' type='table'>
+            <columns character-set='UTF-8' header='yes' locale='en_CA' separator=','>
+              <column datatype='integer' name='F1' ordinal='0' />
+              <column datatype='integer' name='age' ordinal='1' />
+              <column datatype='integer' name='children' ordinal='2' />
+              <column datatype='real' name='charges' ordinal='3' />
+            </columns>
+          </relation>
+          <relation connection='textscan.0mhx1e917i3d69125foby1xfvr8a' name='Amiesubrq1.csv' table='[Amiesubrq1#csv]' type='table'>
+            <columns character-set='UTF-8' header='yes' locale='en_CA' separator=','>
+              <column datatype='integer' name='F1' ordinal='0' />
+              <column datatype='integer' name='Age' ordinal='1' />
+              <column datatype='real' name='Bmi' ordinal='2' />
+            </columns>
+          </relation>
+        </_.fcp.ObjectModelEncapsulateLegacy.true...relation>
+        <cols>
+          <map key='[Age]' value='[Amiesubrq1.csv].[Age]' />
+          <map key='[Bmi]' value='[Amiesubrq1.csv].[Bmi]' />
+          <map key='[F1 (Amiesubrq1.csv)]' value='[Amiesubrq1.csv].[F1]' />
+          <map key='[F1]' value='[Amiemaindf.csv].[F1]' />
+          <map key='[age]' value='[Amiemaindf.csv].[age]' />
+          <map key='[charges]' value='[Amiemaindf.csv].[charges]' />
+          <map key='[children]' value='[Amiemaindf.csv].[children]' />
+        </cols>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[Amiemaindf.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;en_GB&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;en_CA&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[Amiesubrq1.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;en_GB&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;en_CA&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>F1</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[F1]</local-name>
+            <parent-name>[Amiemaindf.csv]</parent-name>
+            <remote-alias>F1</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Amiemaindf.csv_6A89DBD5FA8A47C88DBE85ECC5FBE168]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>age</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[age]</local-name>
+            <parent-name>[Amiemaindf.csv]</parent-name>
+            <remote-alias>age</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Amiemaindf.csv_6A89DBD5FA8A47C88DBE85ECC5FBE168]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>children</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[children]</local-name>
+            <parent-name>[Amiemaindf.csv]</parent-name>
+            <remote-alias>children</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Amiemaindf.csv_6A89DBD5FA8A47C88DBE85ECC5FBE168]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>charges</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[charges]</local-name>
+            <parent-name>[Amiemaindf.csv]</parent-name>
+            <remote-alias>charges</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Amiemaindf.csv_6A89DBD5FA8A47C88DBE85ECC5FBE168]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>F1</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[F1 (Amiesubrq1.csv)]</local-name>
+            <parent-name>[Amiesubrq1.csv]</parent-name>
+            <remote-alias>F1</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Amiesubrq1.csv_70C6DA694C214809A9BE06859C87AF7E]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Age</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Age]</local-name>
+            <parent-name>[Amiesubrq1.csv]</parent-name>
+            <remote-alias>Age</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Amiesubrq1.csv_70C6DA694C214809A9BE06859C87AF7E]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Bmi</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Bmi]</local-name>
+            <parent-name>[Amiesubrq1.csv]</parent-name>
+            <remote-alias>Bmi</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Amiesubrq1.csv_70C6DA694C214809A9BE06859C87AF7E]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column caption='Age1' datatype='integer' name='[Age]' role='measure' type='quantitative' />
+      <column caption='SE' datatype='real' name='[Calculation_4687473168237776896]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='STDEV([charges])/SQRT(COUNT([children]))' />
+      </column>
+      <column caption='lowerSE' datatype='real' name='[Calculation_5439644675052613632]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='AVG([charges])-[Calculation_4687473168237776896]' />
+      </column>
+      <column caption='upperSE' datatype='real' name='[Calculation_5439644675052793857]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='AVG([charges])+[Calculation_4687473168237776896]' />
+      </column>
+      <column caption='barlength' datatype='real' name='[Calculation_5439644675054706690]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='[Calculation_5439644675052793857]-[Calculation_5439644675052613632]' />
+      </column>
+      <column caption='SE2' datatype='real' name='[Calculation_5439644675056648195]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='STDEV([charges])/SQRT(COUNT([Bmi]))' />
+      </column>
+      <column caption='SE3' datatype='real' name='[SE2 (copy)_5439644675058421764]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='STDEV([charges])/SQRT(COUNT([age]))' />
+      </column>
+      <_.fcp.ObjectModelTableType.true...column caption='Amiemaindf.csv' datatype='table' name='[__tableau_internal_object_id__].[Amiemaindf.csv_6A89DBD5FA8A47C88DBE85ECC5FBE168]' role='measure' type='quantitative' />
+      <_.fcp.ObjectModelTableType.true...column caption='Amiesubrq1.csv' datatype='table' name='[__tableau_internal_object_id__].[Amiesubrq1.csv_70C6DA694C214809A9BE06859C87AF7E]' role='measure' type='quantitative' />
+      <column caption='Age' datatype='integer' name='[age]' role='measure' type='quantitative' />
+      <column caption='Charges' datatype='real' name='[charges]' role='measure' type='quantitative' />
+      <column caption='Children' datatype='integer' name='[children]' role='measure' type='quantitative' />
+      <column-instance column='[charges]' derivation='Avg' name='[avg:charges:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[Calculation_5439644675052613632]' derivation='User' name='[usr:Calculation_5439644675052613632:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[Calculation_5439644675054706690]' derivation='User' name='[usr:Calculation_5439644675054706690:qk]' pivot='key' type='quantitative' />
+      <layout _.fcp.SchemaViewerObjectModel.false...dim-percentage='0.5' _.fcp.SchemaViewerObjectModel.false...measure-percentage='0.4' dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <style>
+        <style-rule element='mark'>
+          <encoding attr='color' field='[:Measure Names]' type='palette'>
+            <map to='#4e79a7'>
+              <bucket>&quot;[federated.1jzwg2803t5s5u1dh4jnk1ar8gi0].[avg:charges:qk]&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;[federated.1jzwg2803t5s5u1dh4jnk1ar8gi0].[usr:Calculation_5439644675054706690:qk]&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;[federated.1jzwg2803t5s5u1dh4jnk1ar8gi0].[usr:Calculation_5439644675052613632:qk]&quot;</bucket>
+            </map>
+          </encoding>
+        </style-rule>
+      </style>
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;Canada&quot;' />
+      </semantic-values>
+      <_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+        <objects>
+          <object caption='Amiemaindf.csv' id='Amiemaindf.csv_6A89DBD5FA8A47C88DBE85ECC5FBE168'>
+            <properties context=''>
+              <relation connection='textscan.0mhx1e917i3d69125foby1xfvr8a' name='Amiemaindf.csv' table='[Amiemaindf#csv]' type='table'>
+                <columns character-set='UTF-8' header='yes' locale='en_CA' separator=','>
+                  <column datatype='integer' name='F1' ordinal='0' />
+                  <column datatype='integer' name='age' ordinal='1' />
+                  <column datatype='integer' name='children' ordinal='2' />
+                  <column datatype='real' name='charges' ordinal='3' />
+                </columns>
+              </relation>
+            </properties>
+          </object>
+          <object caption='Amiesubrq1.csv' id='Amiesubrq1.csv_70C6DA694C214809A9BE06859C87AF7E'>
+            <properties context=''>
+              <relation connection='textscan.0mhx1e917i3d69125foby1xfvr8a' name='Amiesubrq1.csv' table='[Amiesubrq1#csv]' type='table'>
+                <columns character-set='UTF-8' header='yes' locale='en_CA' separator=','>
+                  <column datatype='integer' name='F1' ordinal='0' />
+                  <column datatype='integer' name='Age' ordinal='1' />
+                  <column datatype='real' name='Bmi' ordinal='2' />
+                </columns>
+              </relation>
+            </properties>
+          </object>
+        </objects>
+        <relationships>
+          <relationship>
+            <expression op='='>
+              <expression op='[age]' />
+              <expression op='[Age]' />
+            </expression>
+            <first-end-point object-id='Amiemaindf.csv_6A89DBD5FA8A47C88DBE85ECC5FBE168' />
+            <second-end-point object-id='Amiesubrq1.csv_70C6DA694C214809A9BE06859C87AF7E' />
+          </relationship>
+        </relationships>
+      </_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+    </datasource>
+  </datasources>
+  <worksheets>
+    <worksheet name='Sheet 1'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true' fontsize='14'>Average medical cost vs Number of Children</run>
+            <run>Æ&#10;</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Amiemaindf' name='federated.1jzwg2803t5s5u1dh4jnk1ar8gi0' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1jzwg2803t5s5u1dh4jnk1ar8gi0'>
+            <column caption='SE' datatype='real' name='[Calculation_4687473168237776896]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='STDEV([charges])/SQRT(COUNT([children]))' />
+            </column>
+            <column caption='lowerSE' datatype='real' name='[Calculation_5439644675052613632]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='AVG([charges])-[Calculation_4687473168237776896]' />
+            </column>
+            <column caption='upperSE' datatype='real' name='[Calculation_5439644675052793857]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='AVG([charges])+[Calculation_4687473168237776896]' />
+            </column>
+            <column caption='barlength' datatype='real' name='[Calculation_5439644675054706690]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='[Calculation_5439644675052793857]-[Calculation_5439644675052613632]' />
+            </column>
+            <column-instance column='[charges]' derivation='Avg' name='[avg:charges:qk]' pivot='key' type='quantitative' />
+            <column caption='Charges' datatype='real' name='[charges]' role='measure' type='quantitative' />
+            <column caption='Children' datatype='integer' name='[children]' role='measure' type='quantitative' />
+            <column-instance column='[children]' derivation='None' name='[none:children:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Calculation_5439644675052613632]' derivation='User' name='[usr:Calculation_5439644675052613632:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Calculation_5439644675052793857]' derivation='User' name='[usr:Calculation_5439644675052793857:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Calculation_5439644675054706690]' derivation='User' name='[usr:Calculation_5439644675054706690:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <format attr='title' class='0' field='[federated.1jzwg2803t5s5u1dh4jnk1ar8gi0].[avg:charges:qk]' scope='rows' value='Average Medical Cost' />
+            <encoding attr='space' class='0' field='[federated.1jzwg2803t5s5u1dh4jnk1ar8gi0].[usr:Calculation_5439644675052613632:qk]' field-type='quantitative' fold='true' scope='rows' type='space' />
+            <format attr='display' class='0' field='[federated.1jzwg2803t5s5u1dh4jnk1ar8gi0].[usr:Calculation_5439644675052613632:qk]' scope='rows' value='false' />
+          </style-rule>
+          <style-rule element='refband'>
+            <format attr='line-pattern-only' id='refline0' value='solid' />
+            <format attr='fill-color' id='refline0' value='#00000000' />
+            <format attr='stroke-size' id='refline0' value='0' />
+            <format attr='line-visibility' id='refline0' value='off' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane id='7' selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Bar' />
+            <encodings>
+              <lod column='[federated.1jzwg2803t5s5u1dh4jnk1ar8gi0].[usr:Calculation_5439644675052613632:qk]' />
+              <lod column='[federated.1jzwg2803t5s5u1dh4jnk1ar8gi0].[usr:Calculation_5439644675052793857:qk]' />
+            </encodings>
+            <reference-line axis-column='[federated.1jzwg2803t5s5u1dh4jnk1ar8gi0].[avg:charges:qk]' enable-instant-analytics='true' formula='min' id='refline0' label-type='none' paired-id='refline2' scope='per-cell' symmetric='false' value-column='[federated.1jzwg2803t5s5u1dh4jnk1ar8gi0].[usr:Calculation_5439644675052613632:qk]' z-order='3' />
+            <reference-line axis-column='[federated.1jzwg2803t5s5u1dh4jnk1ar8gi0].[avg:charges:qk]' enable-instant-analytics='true' formula='max' id='refline1' label-type='none' paired-id='refline0' scope='per-cell' symmetric='false' value-column='[federated.1jzwg2803t5s5u1dh4jnk1ar8gi0].[usr:Calculation_5439644675052793857:qk]' z-order='1' />
+            <reference-line axis-column='[federated.1jzwg2803t5s5u1dh4jnk1ar8gi0].[avg:charges:qk]' enable-instant-analytics='true' formula='max' id='refline2' label-type='none' paired-id='refline0' scope='per-cell' symmetric='false' value-column='[federated.1jzwg2803t5s5u1dh4jnk1ar8gi0].[usr:Calculation_5439644675052793857:qk]' z-order='2' />
+          </pane>
+          <pane id='8' selection-relaxation-option='selection-relaxation-allow' y-axis-name='[federated.1jzwg2803t5s5u1dh4jnk1ar8gi0].[avg:charges:qk]'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Bar' />
+            <encodings>
+              <lod column='[federated.1jzwg2803t5s5u1dh4jnk1ar8gi0].[usr:Calculation_5439644675052613632:qk]' />
+              <lod column='[federated.1jzwg2803t5s5u1dh4jnk1ar8gi0].[usr:Calculation_5439644675052793857:qk]' />
+            </encodings>
+          </pane>
+          <pane id='9' selection-relaxation-option='selection-relaxation-allow' y-axis-name='[federated.1jzwg2803t5s5u1dh4jnk1ar8gi0].[usr:Calculation_5439644675052613632:qk]'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='GanttBar' />
+            <mark-sizing mark-sizing-setting='marks-scaling-off' />
+            <encodings>
+              <size column='[federated.1jzwg2803t5s5u1dh4jnk1ar8gi0].[usr:Calculation_5439644675054706690:qk]' />
+              <lod column='[federated.1jzwg2803t5s5u1dh4jnk1ar8gi0].[usr:Calculation_5439644675052613632:qk]' />
+              <lod column='[federated.1jzwg2803t5s5u1dh4jnk1ar8gi0].[usr:Calculation_5439644675052793857:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='size' value='0.0099999997764825821' />
+                <format attr='mark-color' value='#000000' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>([federated.1jzwg2803t5s5u1dh4jnk1ar8gi0].[avg:charges:qk] + [federated.1jzwg2803t5s5u1dh4jnk1ar8gi0].[usr:Calculation_5439644675052613632:qk])</rows>
+        <cols>[federated.1jzwg2803t5s5u1dh4jnk1ar8gi0].[none:children:qk]</cols>
+      </table>
+      <simple-id uuid='{19AC40D2-42DF-4D8C-ADAD-C8C44AA6B4B0}' />
+    </worksheet>
+    <worksheet name='Sheet 2'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true' fontsize='14'>Average medical cost vs Age</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Amiemaindf' name='federated.1jzwg2803t5s5u1dh4jnk1ar8gi0' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1jzwg2803t5s5u1dh4jnk1ar8gi0'>
+            <column caption='SE' datatype='real' name='[Calculation_4687473168237776896]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='STDEV([charges])/SQRT(COUNT([children]))' />
+            </column>
+            <column caption='lowerSE' datatype='real' name='[Calculation_5439644675052613632]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='AVG([charges])-[Calculation_4687473168237776896]' />
+            </column>
+            <column caption='upperSE' datatype='real' name='[Calculation_5439644675052793857]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='AVG([charges])+[Calculation_4687473168237776896]' />
+            </column>
+            <column caption='barlength' datatype='real' name='[Calculation_5439644675054706690]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='[Calculation_5439644675052793857]-[Calculation_5439644675052613632]' />
+            </column>
+            <column caption='Age' datatype='integer' name='[age]' role='measure' type='quantitative' />
+            <column-instance column='[charges]' derivation='Avg' name='[avg:charges:qk]' pivot='key' type='quantitative' />
+            <column caption='Charges' datatype='real' name='[charges]' role='measure' type='quantitative' />
+            <column caption='Children' datatype='integer' name='[children]' role='measure' type='quantitative' />
+            <column-instance column='[age]' derivation='None' name='[none:age:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Calculation_5439644675052613632]' derivation='User' name='[usr:Calculation_5439644675052613632:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Calculation_5439644675052793857]' derivation='User' name='[usr:Calculation_5439644675052793857:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Calculation_5439644675054706690]' derivation='User' name='[usr:Calculation_5439644675054706690:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <encoding attr='space' class='0' field='[federated.1jzwg2803t5s5u1dh4jnk1ar8gi0].[usr:Calculation_5439644675052613632:qk]' field-type='quantitative' fold='true' scope='rows' type='space' />
+            <format attr='display' class='0' field='[federated.1jzwg2803t5s5u1dh4jnk1ar8gi0].[usr:Calculation_5439644675052613632:qk]' scope='rows' value='false' />
+            <format attr='title' class='0' field='[federated.1jzwg2803t5s5u1dh4jnk1ar8gi0].[avg:charges:qk]' scope='rows' value='Average Medical Cost' />
+          </style-rule>
+          <style-rule element='refband'>
+            <format attr='fill-color' id='refline0' value='#00000000' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Circle' />
+            <mark-sizing mark-sizing-setting='marks-scaling-off' />
+            <encodings>
+              <lod column='[federated.1jzwg2803t5s5u1dh4jnk1ar8gi0].[usr:Calculation_5439644675052613632:qk]' />
+              <lod column='[federated.1jzwg2803t5s5u1dh4jnk1ar8gi0].[usr:Calculation_5439644675052793857:qk]' />
+            </encodings>
+            <reference-line axis-column='[federated.1jzwg2803t5s5u1dh4jnk1ar8gi0].[avg:charges:qk]' enable-instant-analytics='true' formula='min' id='refline0' label-type='none' paired-id='refline1' scope='per-cell' symmetric='false' value-column='[federated.1jzwg2803t5s5u1dh4jnk1ar8gi0].[usr:Calculation_5439644675052613632:qk]' z-order='1' />
+            <reference-line axis-column='[federated.1jzwg2803t5s5u1dh4jnk1ar8gi0].[avg:charges:qk]' enable-instant-analytics='true' formula='max' id='refline1' label-type='none' paired-id='refline0' scope='per-cell' symmetric='false' value-column='[federated.1jzwg2803t5s5u1dh4jnk1ar8gi0].[usr:Calculation_5439644675052793857:qk]' z-order='1' />
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-color' value='#499894' />
+                <format attr='size' value='0.76861876249313354' />
+              </style-rule>
+            </style>
+          </pane>
+          <pane id='1' selection-relaxation-option='selection-relaxation-allow' y-axis-name='[federated.1jzwg2803t5s5u1dh4jnk1ar8gi0].[avg:charges:qk]'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Circle' />
+            <mark-sizing mark-sizing-setting='marks-scaling-off' />
+            <encodings>
+              <lod column='[federated.1jzwg2803t5s5u1dh4jnk1ar8gi0].[usr:Calculation_5439644675052613632:qk]' />
+              <lod column='[federated.1jzwg2803t5s5u1dh4jnk1ar8gi0].[usr:Calculation_5439644675052793857:qk]' />
+            </encodings>
+            <trendline enable-confidence-bands='false' enable-instant-analytics='true' enabled='true' exclude-color='false' exclude-intercept='false' fit='linear' />
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-color' value='#499894' />
+                <format attr='size' value='0.76861876249313354' />
+              </style-rule>
+            </style>
+          </pane>
+          <pane id='2' selection-relaxation-option='selection-relaxation-allow' y-axis-name='[federated.1jzwg2803t5s5u1dh4jnk1ar8gi0].[usr:Calculation_5439644675052613632:qk]'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='GanttBar' />
+            <mark-sizing mark-sizing-setting='marks-scaling-off' />
+            <encodings>
+              <size column='[federated.1jzwg2803t5s5u1dh4jnk1ar8gi0].[usr:Calculation_5439644675054706690:qk]' />
+              <lod column='[federated.1jzwg2803t5s5u1dh4jnk1ar8gi0].[usr:Calculation_5439644675052613632:qk]' />
+              <lod column='[federated.1jzwg2803t5s5u1dh4jnk1ar8gi0].[usr:Calculation_5439644675052793857:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-color' value='#000000' />
+                <format attr='size' value='0.0099999997764825821' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>([federated.1jzwg2803t5s5u1dh4jnk1ar8gi0].[avg:charges:qk] + [federated.1jzwg2803t5s5u1dh4jnk1ar8gi0].[usr:Calculation_5439644675052613632:qk])</rows>
+        <cols>[federated.1jzwg2803t5s5u1dh4jnk1ar8gi0].[none:age:qk]</cols>
+      </table>
+      <simple-id uuid='{67EC43F0-4CAF-4606-A529-85A2537F01C2}' />
+    </worksheet>
+    <worksheet name='Sheet 3'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run fontsize='14'>Age vs Average BMI</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Amiemaindf' name='federated.1jzwg2803t5s5u1dh4jnk1ar8gi0' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1jzwg2803t5s5u1dh4jnk1ar8gi0'>
+            <column caption='Age1' datatype='integer' name='[Age]' role='measure' type='quantitative' />
+            <column datatype='real' name='[Bmi]' role='measure' type='quantitative' />
+            <column-instance column='[Bmi]' derivation='Avg' name='[avg:Bmi:ok]' pivot='key' type='ordinal' />
+            <column-instance column='[Age]' derivation='None' name='[none:Age:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <format attr='title' class='0' field='[federated.1jzwg2803t5s5u1dh4jnk1ar8gi0].[none:Age:qk]' scope='rows' value='Age' />
+          </style-rule>
+          <style-rule element='label'>
+            <format attr='text-format' field='[federated.1jzwg2803t5s5u1dh4jnk1ar8gi0].[avg:Bmi:ok]' value='n#,##0.00' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Area' />
+          </pane>
+        </panes>
+        <rows>[federated.1jzwg2803t5s5u1dh4jnk1ar8gi0].[none:Age:qk]</rows>
+        <cols>[federated.1jzwg2803t5s5u1dh4jnk1ar8gi0].[avg:Bmi:ok]</cols>
+      </table>
+      <simple-id uuid='{B6A150DB-E223-4482-8A32-6457754198BC}' />
+    </worksheet>
+    <worksheet name='Sheet 4'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run fontsize='14'>BMI vs Average Medical Cost</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Amiemaindf' name='federated.1jzwg2803t5s5u1dh4jnk1ar8gi0' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1jzwg2803t5s5u1dh4jnk1ar8gi0'>
+            <column datatype='real' name='[Bmi]' role='measure' type='quantitative' />
+            <column caption='SE' datatype='real' name='[Calculation_4687473168237776896]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='STDEV([charges])/SQRT(COUNT([children]))' />
+            </column>
+            <column caption='lowerSE' datatype='real' name='[Calculation_5439644675052613632]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='AVG([charges])-[Calculation_4687473168237776896]' />
+            </column>
+            <column caption='upperSE' datatype='real' name='[Calculation_5439644675052793857]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='AVG([charges])+[Calculation_4687473168237776896]' />
+            </column>
+            <column caption='barlength' datatype='real' name='[Calculation_5439644675054706690]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='[Calculation_5439644675052793857]-[Calculation_5439644675052613632]' />
+            </column>
+            <column-instance column='[charges]' derivation='Avg' name='[avg:charges:qk]' pivot='key' type='quantitative' />
+            <column caption='Charges' datatype='real' name='[charges]' role='measure' type='quantitative' />
+            <column caption='Children' datatype='integer' name='[children]' role='measure' type='quantitative' />
+            <column-instance column='[Bmi]' derivation='None' name='[none:Bmi:ok]' pivot='key' type='ordinal' />
+            <column-instance column='[Calculation_5439644675052613632]' derivation='User' name='[usr:Calculation_5439644675052613632:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Calculation_5439644675052793857]' derivation='User' name='[usr:Calculation_5439644675052793857:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Calculation_5439644675054706690]' derivation='User' name='[usr:Calculation_5439644675054706690:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <encoding attr='space' class='0' field='[federated.1jzwg2803t5s5u1dh4jnk1ar8gi0].[usr:Calculation_5439644675052613632:qk]' field-type='quantitative' fold='true' scope='rows' type='space' />
+            <format attr='display' class='0' field='[federated.1jzwg2803t5s5u1dh4jnk1ar8gi0].[usr:Calculation_5439644675052613632:qk]' scope='rows' value='false' />
+            <format attr='title' class='0' field='[federated.1jzwg2803t5s5u1dh4jnk1ar8gi0].[avg:charges:qk]' scope='rows' value='Average Medical Cost' />
+          </style-rule>
+          <style-rule element='cell'>
+            <format attr='width' field='[federated.1jzwg2803t5s5u1dh4jnk1ar8gi0].[none:Bmi:ok]' value='22' />
+          </style-rule>
+          <style-rule element='label'>
+            <format attr='text-format' field='[federated.1jzwg2803t5s5u1dh4jnk1ar8gi0].[none:Bmi:ok]' value='n#,##0.00' />
+            <format attr='text-orientation' field='[federated.1jzwg2803t5s5u1dh4jnk1ar8gi0].[none:Bmi:ok]' value='-90' />
+          </style-rule>
+          <style-rule element='refband'>
+            <format attr='fill-color' id='refline0' value='#00000000' />
+            <format attr='line-visibility' id='refline0' value='on' />
+            <format attr='line-pattern-only' id='refline0' value='solid' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <lod column='[federated.1jzwg2803t5s5u1dh4jnk1ar8gi0].[usr:Calculation_5439644675052613632:qk]' />
+              <lod column='[federated.1jzwg2803t5s5u1dh4jnk1ar8gi0].[usr:Calculation_5439644675052793857:qk]' />
+            </encodings>
+            <reference-line axis-column='[federated.1jzwg2803t5s5u1dh4jnk1ar8gi0].[avg:charges:qk]' enable-instant-analytics='true' formula='min' id='refline0' label-type='none' paired-id='refline1' scope='per-cell' symmetric='false' value-column='[federated.1jzwg2803t5s5u1dh4jnk1ar8gi0].[usr:Calculation_5439644675052613632:qk]' z-order='1' />
+            <reference-line axis-column='[federated.1jzwg2803t5s5u1dh4jnk1ar8gi0].[avg:charges:qk]' enable-instant-analytics='true' formula='max' id='refline1' label-type='none' paired-id='refline0' scope='per-cell' symmetric='false' value-column='[federated.1jzwg2803t5s5u1dh4jnk1ar8gi0].[usr:Calculation_5439644675052793857:qk]' z-order='1' />
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-color' value='#b07aa1' />
+              </style-rule>
+              <style-rule element='pane'>
+                <format attr='minwidth' value='-1' />
+                <format attr='maxwidth' value='-1' />
+              </style-rule>
+            </style>
+          </pane>
+          <pane id='1' selection-relaxation-option='selection-relaxation-allow' y-axis-name='[federated.1jzwg2803t5s5u1dh4jnk1ar8gi0].[avg:charges:qk]'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <lod column='[federated.1jzwg2803t5s5u1dh4jnk1ar8gi0].[usr:Calculation_5439644675052613632:qk]' />
+              <lod column='[federated.1jzwg2803t5s5u1dh4jnk1ar8gi0].[usr:Calculation_5439644675052793857:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-color' value='#b07aa1' />
+              </style-rule>
+            </style>
+          </pane>
+          <pane id='2' selection-relaxation-option='selection-relaxation-allow' y-axis-name='[federated.1jzwg2803t5s5u1dh4jnk1ar8gi0].[usr:Calculation_5439644675052613632:qk]'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='GanttBar' />
+            <mark-sizing mark-sizing-setting='marks-scaling-off' />
+            <encodings>
+              <size column='[federated.1jzwg2803t5s5u1dh4jnk1ar8gi0].[usr:Calculation_5439644675054706690:qk]' />
+              <lod column='[federated.1jzwg2803t5s5u1dh4jnk1ar8gi0].[usr:Calculation_5439644675052613632:qk]' />
+              <lod column='[federated.1jzwg2803t5s5u1dh4jnk1ar8gi0].[usr:Calculation_5439644675052793857:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-color' value='#000000' />
+                <format attr='size' value='0.0099999997764825821' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>([federated.1jzwg2803t5s5u1dh4jnk1ar8gi0].[avg:charges:qk] + [federated.1jzwg2803t5s5u1dh4jnk1ar8gi0].[usr:Calculation_5439644675052613632:qk])</rows>
+        <cols>[federated.1jzwg2803t5s5u1dh4jnk1ar8gi0].[none:Bmi:ok]</cols>
+      </table>
+      <simple-id uuid='{ED5BA779-D9F7-4EC0-9BD6-A34187FBAE2B}' />
+    </worksheet>
+    <worksheet name='Sheet 5'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run fontsize='14'>Average Number of Children vs Age</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Amiemaindf' name='federated.1jzwg2803t5s5u1dh4jnk1ar8gi0' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1jzwg2803t5s5u1dh4jnk1ar8gi0'>
+            <column caption='Age' datatype='integer' name='[age]' role='measure' type='quantitative' />
+            <column-instance column='[children]' derivation='Avg' name='[avg:children:qk]' pivot='key' type='quantitative' />
+            <column caption='Children' datatype='integer' name='[children]' role='measure' type='quantitative' />
+            <column-instance column='[age]' derivation='None' name='[none:age:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <format attr='title' class='0' field='[federated.1jzwg2803t5s5u1dh4jnk1ar8gi0].[avg:children:qk]' scope='rows' value='Average Number of Children' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Shape' />
+            <trendline degree='2' enable-confidence-bands='false' enable-instant-analytics='true' enabled='true' exclude-color='false' exclude-intercept='false' fit='polynomial' />
+            <style>
+              <style-rule element='mark'>
+                <format attr='shape' value='times' />
+                <format attr='mark-color' value='#f28e2b' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.1jzwg2803t5s5u1dh4jnk1ar8gi0].[avg:children:qk]</rows>
+        <cols>[federated.1jzwg2803t5s5u1dh4jnk1ar8gi0].[none:age:qk]</cols>
+      </table>
+      <simple-id uuid='{BF140BF5-30CF-4FAE-B686-C56AE8591CB7}' />
+    </worksheet>
+  </worksheets>
+  <dashboards>
+    <dashboard _.fcp.AccessibleZoneTabOrder.true...enable-sort-zone-taborder='true' name='Dashboard 1'>
+      <style />
+      <size sizing-mode='automatic' />
+      <zones>
+        <zone h='100000' id='4' type-v2='layout-basic' w='100000' x='0' y='0'>
+          <zone h='84419' id='25' param='horz' type-v2='layout-flow' w='98940' x='530' y='14599'>
+            <zone h='84419' id='12' type-v2='layout-basic' w='98940' x='530' y='14599'>
+              <zone fixed-size='492' h='84419' id='7' is-fixed='true' param='horz' type-v2='layout-flow' w='49469' x='530' y='14599'>
+                <zone fixed-size='160' h='84419' id='6' is-fixed='true' param='vert' type-v2='layout-flow' w='49469' x='530' y='14599'>
+                  <zone forceUpdate='true' h='9203' id='8' type-v2='text' w='49469' x='530' y='14599'>
+                    <formatted-text>
+                      <run bold='true' fontcolor='#000000dd' fontname='-apple-system' fontsize='18'>What are the Average Medical Costs for different Age groups?</run>
+                      <run fontcolor='#000000dd' fontname='-apple-system' fontsize='18'>Æ </run>
+                      <run>Æ&#10;</run>
+                      <run fontcolor='#000000dd' fontname='-apple-system' fontsize='12'>How does Age correlate to BMI?</run>
+                      <run>Æ&#10;</run>
+                      <run fontcolor='#000000dd' fontname='-apple-system' fontsize='12'>How does BMI relate to Average Medical Costs?</run>
+                      <run>Æ&#10;</run>
+                    </formatted-text>
+                    <zone-style>
+                      <format attr='border-color' value='#000000' />
+                      <format attr='border-style' value='none' />
+                      <format attr='border-width' value='0' />
+                      <format attr='margin' value='4' />
+                    </zone-style>
+                  </zone>
+                  <zone h='24867' id='3' name='Sheet 2' w='49469' x='530' y='23802'>
+                    <layout-cache minheight='197' minwidth='159' type-h='scalable' type-w='scalable' />
+                    <zone-style>
+                      <format attr='border-color' value='#000000' />
+                      <format attr='border-style' value='none' />
+                      <format attr='border-width' value='0' />
+                      <format attr='margin' value='4' />
+                    </zone-style>
+                  </zone>
+                  <zone h='25112' id='17' name='Sheet 3' w='49469' x='530' y='48669'>
+                    <layout-cache minheight='199' type-h='scalable' type-w='fixed' />
+                    <zone-style>
+                      <format attr='border-color' value='#000000' />
+                      <format attr='border-style' value='none' />
+                      <format attr='border-width' value='0' />
+                      <format attr='margin' value='4' />
+                    </zone-style>
+                  </zone>
+                  <zone h='25235' id='18' name='Sheet 4' w='49469' x='530' y='73781'>
+                    <layout-cache minheight='200' type-h='scalable' type-w='fixed' />
+                    <zone-style>
+                      <format attr='border-color' value='#000000' />
+                      <format attr='border-style' value='none' />
+                      <format attr='border-width' value='0' />
+                      <format attr='margin' value='4' />
+                    </zone-style>
+                  </zone>
+                </zone>
+              </zone>
+              <zone fixed-size='460' h='84419' id='9' is-fixed='true' param='vert' type-v2='layout-flow' w='49471' x='49999' y='14599'>
+                <zone forceUpdate='true' h='6872' id='11' type-v2='text' w='49471' x='49999' y='14599'>
+                  <formatted-text>
+                    <run bold='true' fontcolor='#000000dd' fontname='-apple-system' fontsize='18'>How does the number of children affect medical charges?</run>
+                    <run fontcolor='#000000dd' fontname='-apple-system' fontsize='18'>Æ </run>
+                    <run>Æ&#10;</run>
+                    <run fontcolor='#000000dd' fontname='-apple-system' fontsize='12'>What is the Average Number of Children for each Age group?</run>
+                  </formatted-text>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                  </zone-style>
+                </zone>
+                <zone h='38773' id='16' name='Sheet 1' w='49471' x='49999' y='21471'>
+                  <layout-cache minheight='197' type-h='scalable' type-w='fixed' />
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                  </zone-style>
+                </zone>
+                <zone h='38773' id='19' name='Sheet 5' w='49471' x='49999' y='60244'>
+                  <layout-cache minheight='197' type-h='scalable' type-w='fixed' />
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                  </zone-style>
+                </zone>
+              </zone>
+            </zone>
+          </zone>
+          <zone forceUpdate='true' h='13617' id='26' type-v2='text' w='57518' x='16474' y='982'>
+            <formatted-text>
+              <run fontalignment='1' fontcolor='#59a14f' fontname='Tableau Bold' fontsize='36'>Healthy Body, Healthy Money</run>
+            </formatted-text>
+            <zone-style>
+              <format attr='border-color' value='#000000' />
+              <format attr='border-style' value='none' />
+              <format attr='border-width' value='0' />
+              <format attr='margin' value='4' />
+            </zone-style>
+          </zone>
+          <zone _.fcp.ExternalImageContentForZones.true...image-file-url='https://img.freepik.com/premium-photo/background-us-dollar-landscape-layered-together-several-mattresses-white_24883-1201.jpg?w=2000' h='13617' id='27' is-centered='0' is-scaled='1' type-v2='bitmap' w='15944' x='530' y='982'>
+            <zone-style>
+              <format attr='border-color' value='#000000' />
+              <format attr='border-style' value='none' />
+              <format attr='border-width' value='0' />
+              <format attr='margin' value='4' />
+            </zone-style>
+          </zone>
+          <zone _.fcp.ExternalImageContentForZones.true...image-file-url='https://previews.123rf.com/images/nireve/nireve1107/nireve110700011/10042564-heart-and-a-stethoscope-with-heartbeat-pulse-symbol-isolated-in-white-background.jpg' h='13617' id='28' is-scaled='1' type-v2='bitmap' w='25478' x='73992' y='982'>
+            <zone-style>
+              <format attr='border-color' value='#000000' />
+              <format attr='border-style' value='none' />
+              <format attr='border-width' value='0' />
+              <format attr='margin' value='4' />
+            </zone-style>
+          </zone>
+          <zone-style>
+            <format attr='border-color' value='#000000' />
+            <format attr='border-style' value='none' />
+            <format attr='border-width' value='0' />
+            <format attr='margin' value='8' />
+          </zone-style>
+        </zone>
+      </zones>
+      <devicelayouts>
+        <devicelayout auto-generated='true' name='Phone'>
+          <size maxheight='1600' minheight='1600' sizing-mode='vscroll' />
+          <zones>
+            <zone h='100000' id='42' type-v2='layout-basic' w='100000' x='0' y='0'>
+              <zone h='98036' id='41' param='vert' type-v2='layout-flow' w='98828' x='586' y='982'>
+                <zone _.fcp.ExternalImageContentForZones.true...image-file-url='https://img.freepik.com/premium-photo/background-us-dollar-landscape-layered-together-several-mattresses-white_24883-1201.jpg?w=2000' fixed-size='101' h='13619' id='27' is-centered='0' is-fixed='true' is-scaled='1' type-v2='bitmap' w='15929' x='586' y='982'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone forceUpdate='true' h='13619' id='26' type-v2='text' w='57454' x='16515' y='982'>
+                  <formatted-text>
+                    <run fontalignment='1' fontcolor='#59a14f' fontname='Tableau Bold' fontsize='36'>Healthy Body, Healthy Money</run>
+                  </formatted-text>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone _.fcp.ExternalImageContentForZones.true...image-file-url='https://previews.123rf.com/images/nireve/nireve1107/nireve110700011/10042564-heart-and-a-stethoscope-with-heartbeat-pulse-symbol-isolated-in-white-background.jpg' fixed-size='101' h='13619' id='28' is-fixed='true' is-scaled='1' type-v2='bitmap' w='25445' x='73969' y='982'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone forceUpdate='true' h='14479' id='8' type-v2='text' w='49413' x='586' y='14601'>
+                  <formatted-text>
+                    <run bold='true' fontcolor='#000000dd' fontname='-apple-system' fontsize='18'>What are the Average Medical Costs for different Age groups?</run>
+                    <run fontcolor='#000000dd' fontname='-apple-system' fontsize='18'>Æ </run>
+                    <run>Æ&#10;</run>
+                    <run fontcolor='#000000dd' fontname='-apple-system' fontsize='12'>How does Age correlate to BMI?</run>
+                    <run>Æ&#10;</run>
+                    <run fontcolor='#000000dd' fontname='-apple-system' fontsize='12'>How does BMI relate to Average Medical Costs?</run>
+                    <run>Æ&#10;</run>
+                  </formatted-text>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone forceUpdate='true' h='11657' id='11' type-v2='text' w='49415' x='49999' y='14601'>
+                  <formatted-text>
+                    <run bold='true' fontcolor='#000000dd' fontname='-apple-system' fontsize='18'>How does the number of children affect medical charges?</run>
+                    <run fontcolor='#000000dd' fontname='-apple-system' fontsize='18'>Æ </run>
+                    <run>Æ&#10;</run>
+                    <run fontcolor='#000000dd' fontname='-apple-system' fontsize='12'>What is the Average Number of Children for each Age group?</run>
+                  </formatted-text>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='36380' id='16' is-fixed='true' name='Sheet 1' w='49415' x='49999' y='26258'>
+                  <layout-cache minheight='198' type-h='scalable' type-w='fixed' />
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='178' h='23312' id='3' is-fixed='true' name='Sheet 2' w='49413' x='586' y='29080'>
+                  <layout-cache minheight='198' minwidth='159' type-h='scalable' type-w='scalable' />
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='179' h='23312' id='17' is-fixed='true' name='Sheet 3' w='49413' x='586' y='52392'>
+                  <layout-cache minheight='197' type-h='scalable' type-w='fixed' />
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='36380' id='19' is-fixed='true' name='Sheet 5' w='49415' x='49999' y='62638'>
+                  <layout-cache minheight='198' type-h='scalable' type-w='fixed' />
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='178' h='23314' id='18' is-fixed='true' name='Sheet 4' w='49413' x='586' y='75704'>
+                  <layout-cache minheight='197' type-h='scalable' type-w='fixed' />
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+              </zone>
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='8' />
+              </zone-style>
+            </zone>
+          </zones>
+        </devicelayout>
+      </devicelayouts>
+      <simple-id uuid='{F6C6CB11-4E87-4727-B24D-91EE615ECCB4}' />
+    </dashboard>
+  </dashboards>
+  <windows show-side-pane='false' source-height='30'>
+    <window class='worksheet' name='Sheet 1'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{0D9D2325-27A3-489F-BB4E-69D6CBF6726C}' />
+    </window>
+    <window class='worksheet' name='Sheet 2'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <floating-toolbar-visibility value='2' />
+      </viewpoint>
+      <simple-id uuid='{AE72080A-0A0D-41DF-BF00-55CC2BC1D135}' />
+    </window>
+    <window class='worksheet' maximized='true' name='Sheet 3'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{A5DFC4A5-3EF8-42CA-BD93-54A29372B9AF}' />
+    </window>
+    <window class='worksheet' name='Sheet 4'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{2B0DB21B-9C44-4FB9-A931-CA73420F27EA}' />
+    </window>
+    <window class='worksheet' name='Sheet 5'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{834EE931-6096-4463-B3A4-49D3C6E1A2FA}' />
+    </window>
+    <window class='dashboard' name='Dashboard 1'>
+      <viewpoints>
+        <viewpoint name='Sheet 1'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='Sheet 2'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='Sheet 3'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='Sheet 4'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='Sheet 5'>
+          <zoom type='entire-view' />
+        </viewpoint>
+      </viewpoints>
+      <active id='16' />
+      <simple-id uuid='{4E1DFA3E-3E61-477F-B9C2-01504C33ACFB}' />
+    </window>
+  </windows>
+</workbook>
