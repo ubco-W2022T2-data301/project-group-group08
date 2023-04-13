@@ -17,7 +17,7 @@ From Tableau, we are able to confirm our insights of an overall positive trend b
 <br/>
 
 ## Question 2 + Results 
-**How does age is distributed in each BMI Classifications?**
+**How does age, sex, smoker's status, and region is distributed in each BMI Classifications?**
 ![Barplot of Average Healthcare Cost for Each Age](images/JasonRQ2SQ1.png)
 Overall, it can be seen that there is a shift on the peak of the age distribution as the BMI Category progresses from Underweight to Obese Class II. This finding is supported by the median line of the box and whisker plot which shows that there is a shift in the age median as the BMI Category progresses from Underweight to Obese Class II. Thus, there may be a positive linear relationship between Age and BMI which implies that as age increases, BMI also increases. Looking at the sex hue, there is a slight difference on the distribution of age in each BMI category between female and male. For instance, in the underweight classification, Male tend to be younger compared to female. In the Obsese Class III classification, Male tend to be older compared to female. This shows that sex does affect the distribution of age for each BMI category.
 
