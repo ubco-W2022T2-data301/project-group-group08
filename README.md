@@ -23,7 +23,4 @@ Our main dataset which is the Medical Cost Personal Datasets was taken from Kagg
 
 {You should use this area to add a screenshot of an interesting plot, or of your dashboard}
 
-<img src ="images/test.png" width="100px">
-
 ## References
-
