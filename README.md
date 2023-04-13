@@ -1,4 +1,4 @@
-# Group 08 - Healthy Body, Healthy Money (Working Title)
+# Group 08 - Healthy Body, Healthy Money
 
 ## Milestones
 
@@ -22,8 +22,6 @@ Our main dataset which is the Medical Cost Personal Datasets was taken from Kagg
 ## Images
 
 {You should use this area to add a screenshot of an interesting plot, or of your dashboard}
-
-<img src ="images/test.png" width="100px">
 
 ## References
 
