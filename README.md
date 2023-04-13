@@ -20,8 +20,8 @@ Our main dataset which is the Medical Cost Personal Datasets was taken from Kagg
 - Kenneth Abadi: Second year, Computer Science major at UBCO
 
 ## Images
-<img src = "images/Amierq2jointgrid.png" width= 50%>
-
+<img src = "images/Amierq2jointgrid.png" width= 75%>
+<img src = "images/Jasonrq2sq1.png" width= 75%>
 
 ## References
 Main dataset: https://www.kaggle.com/datasets/mirichoi0218/insurance

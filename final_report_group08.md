@@ -18,13 +18,13 @@ From Tableau, we are able to confirm our insights of an overall positive trend b
 
 ## Question 2 + Results 
 **How does age, sex, smoker's status, and region is distributed in each BMI Classifications?**
-![Barplot of Average Healthcare Cost for Each Age](images/JasonRQ2SQ1.png)
+![Violin plot of Age and Sex for each BMI Category](images/JasonRQ2SQ1.png)
 Overall, it can be seen that there is a shift on the peak of the age distribution as the BMI Category progresses from Underweight to Obese Class II. This finding is supported by the median line of the box and whisker plot which shows that there is a shift in the age median as the BMI Category progresses from Underweight to Obese Class II. Thus, there may be a positive linear relationship between Age and BMI which implies that as age increases, BMI also increases. Looking at the sex hue, there is a slight difference on the distribution of age in each BMI category between female and male. For instance, in the underweight classification, Male tend to be younger compared to female. In the Obsese Class III classification, Male tend to be older compared to female. This shows that sex does affect the distribution of age for each BMI category.
 
-![Barplot of Average Healthcare Cost for Each Age](images/JasonRQ2SQ2.png)
+![Violin plot of Age and Smoker Status for each BMI Category](images/JasonRQ2SQ2.png)
 Looking at the smoker status hue, there is a slight difference on the distribution of age in each BMI category between smokers and non smokers. Non-smokers tend to have a positive shift in the distribution of age as the BMI category progresses. This implies that non-smokers follows the positive linear trend between age and BMI. However, for smokers, there is no observed pattern on the shift of age distribution in each BMI category. Thus smoker's status does affect the distribution of age in each BMI category.
 
-![Barplot of Average Healthcare Cost for Each Age](images/JasonRQ2SQ3.png)
+![Box and whisker plot of Age and Region for each BMI Category](images/JasonRQ2SQ3.png)
 Looking at the Region hue, there is a difference on the distribution of age in each BMI category between the four regions in the United States. Since there is no data for the underweight BMI category in the southeast region, that category will be excluded from this sub question analysis. There is no pattern that can be observed for the distribution of age and BMI category in the southern regions. However, in the northern regions, there is an positive shift in the age distribution as the BMI category progresses. Furthermore, it is observed that each region does have a different age distribution for each BMI category. Thus, region does affect the distribution of age for each BMI category.
 
 <br/>
