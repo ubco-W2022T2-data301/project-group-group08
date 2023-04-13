@@ -20,7 +20,19 @@ From the plot above, we can see a positive correlation between age and average c
 Same as above.
 
 # Question 3 + Results 
-Same as above.
+
+**What is the correlation between BMI and Medical Charges for smokers and non-smokers**
+
+<img src="images/kennnosmokebar.png" width= 50%><img src="images/kennsmokebar.png" width= 50%>
+From the two scatterplots above, we can see that between BMI and Charges, the smoker graph has a very strong positive correlation (0.806) with the there being two major density 'blocks' seen.
+the non-smoker graph (0.084) has a very weak or no correlation where the plots are very concentrated under $15000 charges and across the whole range of the BMI. The results could be due to smoking increases the severity and health risks associated with higher BMI's
+
+**Which region has a higher percentage of smokers? Does this highly affect the average BMI and Charges?** 
+
+<img src="images/kennnumsmoker.png" width= 60%>
+
+<img src="images/kennbmiviolin.png" width= 50%><img src="images/kennchargesviolin.png" width= 50%>
+Southeast (33.4) and Southwest (30.6) regions both have higher average BMI's as compared to the northeast (29.17) and northwest (29.19) regions. The trend continues for the southeast region where they have the highest average medical charges (14735) and the southwest region having the lowest medical average charges (12346). It seems like the medical cost do follow the hypothesis where the larger number of smokers in a population increases medical charges but the same does not apply to BMI where the southern regions have a higher average BMI as compared to the northern regions.
 
 # Summary/Conclusion 
 A brief paragraph that highlights your key results and what you learned from doing this project.
