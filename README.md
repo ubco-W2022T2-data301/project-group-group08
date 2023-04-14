@@ -21,7 +21,7 @@ Our main dataset which is the Medical Cost Personal Datasets was taken from Kagg
 
 ## Images
 <img src = "images/Amierq2jointgrid.png" width= 75%>
-<img src = "images/JasonRQ2SQ2.png" width= 75%>
+<img src = "images/JasonRQ2SQ1.png" width= 75%>
 
 ## References
 Main dataset: https://www.kaggle.com/datasets/mirichoi0218/insurance
